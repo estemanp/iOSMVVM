@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatBreedDetailViewController" customModule="CatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="catBreedLabel" destination="m22-Og-O5O" id="ZaF-EV-rjD"/>
+                <outlet property="catImageView" destination="zXj-fC-ADH" id="OPo-d3-5XS"/>
+                <outlet property="descriptionLabel" destination="bLa-sn-aey" id="IX3-13-wBz"/>
+                <outlet property="favoriteButton" destination="9hz-T1-yRk" id="66d-Df-U3v"/>
+                <outlet property="negativeButton" destination="VEx-dX-oIc" id="rd6-Sv-Fh7"/>
+                <outlet property="positiveButton" destination="T0e-Gw-eZe" id="f3h-Q9-ap2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWW-xP-ICe">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m22-Og-O5O">
+                            <rect key="frame" x="16" y="16" width="343" height="33.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="0.5725490196078431" green="0.13725490196078433" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zXj-fC-ADH">
+                            <rect key="frame" x="16" y="65.5" width="343" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="uca-u3-YhS"/>
+                            </constraints>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bLa-sn-aey">
+                            <rect key="frame" x="16" y="221.5" width="343" height="281.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGJ-Nt-H24">
+                            <rect key="frame" x="16" y="519" width="343" height="80"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-qH-zus">
+                                    <rect key="frame" x="111.5" y="4" width="120" height="30"/>
+                                    <color key="backgroundColor" red="0.57254901960000004" green="0.13725490200000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="4cx-9x-Uux"/>
+                                        <constraint firstAttribute="height" constant="30" id="aDg-oj-46c"/>
+                                    </constraints>
+                                    <state key="normal" title="Wikipedia">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="goToWikipedia:" destination="-1" eventType="touchUpInside" id="Rhl-Lc-c4Q"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KT1-bo-WzH">
+                                    <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0e-Gw-eZe">
+                                            <rect key="frame" x="0.0" y="0.0" width="161.5" height="30"/>
+                                            <color key="backgroundColor" red="0.2666666667" green="0.71372549019999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <state key="normal" title="Love it" image="checkmark.square" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="light"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="vote:" destination="-1" eventType="touchUpInside" id="SGn-CQ-3iS"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-dX-oIc">
+                                            <rect key="frame" x="181.5" y="0.0" width="161.5" height="30"/>
+                                            <color key="backgroundColor" red="0.82745098039999998" green="0.1647058824" blue="0.1647058824" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <state key="normal" title="Nope it" image="xmark.rectangle" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="medium"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="vote:" destination="-1" eventType="touchUpInside" id="Ba8-c5-8Ei"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="rTV-am-nPF"/>
+                                        <constraint firstItem="VEx-dX-oIc" firstAttribute="height" secondItem="KT1-bo-WzH" secondAttribute="height" id="xtk-xe-VHX"/>
+                                        <constraint firstItem="T0e-Gw-eZe" firstAttribute="height" secondItem="KT1-bo-WzH" secondAttribute="height" id="yS2-ge-tAq"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="MIW-6V-M8g"/>
+                                <constraint firstItem="7Sq-qH-zus" firstAttribute="centerX" secondItem="TGJ-Nt-H24" secondAttribute="centerX" id="dtu-Wd-qaf"/>
+                                <constraint firstItem="KT1-bo-WzH" firstAttribute="top" secondItem="7Sq-qH-zus" secondAttribute="bottom" constant="16" id="kUI-Uv-t6o"/>
+                                <constraint firstItem="KT1-bo-WzH" firstAttribute="leading" secondItem="TGJ-Nt-H24" secondAttribute="leading" id="m8T-GV-Q5I"/>
+                                <constraint firstAttribute="trailing" secondItem="KT1-bo-WzH" secondAttribute="trailing" id="r9u-wZ-eYN"/>
+                                <constraint firstAttribute="bottom" secondItem="KT1-bo-WzH" secondAttribute="bottom" id="xyC-kU-N0a"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-T1-yRk">
+                            <rect key="frame" x="257.5" y="165.5" width="60" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="IRV-P2-x1q"/>
+                                <constraint firstAttribute="width" constant="60" id="qmZ-FV-wGI"/>
+                            </constraints>
+                            <state key="normal" image="icHearth"/>
+                            <connections>
+                                <action selector="changeFavorite:" destination="-1" eventType="touchUpInside" id="DBz-Hp-ezt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="TGJ-Nt-H24" firstAttribute="leading" secondItem="eWW-xP-ICe" secondAttribute="leading" constant="16" id="1FA-FX-D7s"/>
+                        <constraint firstAttribute="trailing" secondItem="bLa-sn-aey" secondAttribute="trailing" constant="16" id="70U-86-Pmp"/>
+                        <constraint firstAttribute="trailing" secondItem="zXj-fC-ADH" secondAttribute="trailing" constant="16" id="C6x-Sg-S8h"/>
+                        <constraint firstItem="9hz-T1-yRk" firstAttribute="centerX" secondItem="zXj-fC-ADH" secondAttribute="centerX" constant="100" id="EIS-fN-iMC"/>
+                        <constraint firstAttribute="trailing" secondItem="m22-Og-O5O" secondAttribute="trailing" constant="16" id="Gz6-5F-SWa"/>
+                        <constraint firstAttribute="trailing" secondItem="TGJ-Nt-H24" secondAttribute="trailing" constant="16" id="V0P-Mz-fgZ"/>
+                        <constraint firstItem="zXj-fC-ADH" firstAttribute="top" secondItem="m22-Og-O5O" secondAttribute="bottom" constant="16" id="bgf-lb-Mrr"/>
+                        <constraint firstAttribute="bottom" secondItem="TGJ-Nt-H24" secondAttribute="bottom" constant="8" id="dpK-2B-evy"/>
+                        <constraint firstItem="bLa-sn-aey" firstAttribute="top" secondItem="zXj-fC-ADH" secondAttribute="bottom" constant="16" id="gAB-Yb-n9O"/>
+                        <constraint firstItem="bLa-sn-aey" firstAttribute="leading" secondItem="eWW-xP-ICe" secondAttribute="leading" constant="16" id="jtm-bU-Wgx"/>
+                        <constraint firstItem="m22-Og-O5O" firstAttribute="top" secondItem="eWW-xP-ICe" secondAttribute="top" constant="16" id="mPY-YZ-7gX"/>
+                        <constraint firstItem="zXj-fC-ADH" firstAttribute="leading" secondItem="eWW-xP-ICe" secondAttribute="leading" constant="16" id="qH8-D8-X6I"/>
+                        <constraint firstItem="TGJ-Nt-H24" firstAttribute="top" secondItem="bLa-sn-aey" secondAttribute="bottom" constant="16" id="rMA-YT-pBa"/>
+                        <constraint firstItem="m22-Og-O5O" firstAttribute="leading" secondItem="eWW-xP-ICe" secondAttribute="leading" constant="16" id="rVH-6s-bWb"/>
+                        <constraint firstItem="9hz-T1-yRk" firstAttribute="top" secondItem="zXj-fC-ADH" secondAttribute="bottom" constant="-40" id="uzg-tX-adZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eWW-xP-ICe" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Fhk-Oy-hyi"/>
+                <constraint firstItem="eWW-xP-ICe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ehR-0X-BFz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eWW-xP-ICe" secondAttribute="trailing" id="nt7-JG-nFP"/>
+                <constraint firstItem="eWW-xP-ICe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="nua-cX-iXv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133.59999999999999" y="119.1904047976012"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="64" height="56"/>
+        <image name="icHearth" width="128" height="128"/>
+        <image name="xmark.rectangle" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
